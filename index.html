@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <title>Shabda</title>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom,#0c1015 0%,#0c1015 50%,#13171e  50%,#13171e 100%);height: 420vh;
+            margin: 0px;
+            border: 0px;
+            padding-top: 70px;
+        }
+        #navbar{
+            border-bottom: 0.1px solid rgb(42, 42, 62);
+            width: 100%;
+            height:25.5px;
+            background-color:#13171e;
+            padding: 21.5px;
+            align-items:center;
+            position: fixed;
+            top: 0;
+        }
+        #logo{
+            color: #fff;
+            font-size: large;
+            margin-left: 60px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+       }
+       #linkref{
+
+        margin-right: 10px;
+        margin-left: 10px;
+        color: #b3bcc9;
+        padding: 10px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 15px;  
+        text-decoration: none;    
+        }
+        #linkref:hover{
+            color:rgb(254, 253, 253);
+            background-color: #07090c;
+            border-radius: 100px;
+        }
+        #pas{
+            float: right;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(223, 64, 6);
+            background-color:rgb(35, 32, 30);
+            border-radius: 100px;
+            padding: 12px 12px 12px;
+            margin-right: 115px;
+            margin-top: -6px;   
+        }
+        #pas:hover{
+            background-color: #07090c;
+            border-radius: 100px;
+        }
+    
+        #integrate{
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            margin-top: 8%;
+            margin-left: -10px;
+            margin-right:-10px;
+        }
+        #new{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            background-color:rgb(246, 78, 17);
+            border-radius: 100px;
+            color: #fff;
+            padding: 20px 36px ;
+        }
+        #new:hover{
+            color:rgb(246, 78, 17);
+            background-color:#07090c ;
+        }
+        #new2{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(35, 32, 30);
+            color:rgb(246, 78, 17);
+            padding: 20px 42.5px;
+            border-radius: 100px;
+            margin-left: 10px;
+
+        }
+        #new2:hover{
+            border-radius: 100px;
+            background-color:#07090c;
+        }
+        #shabda{
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            margin-top: 8%;
+            margin-left: -10px;
+            margin-right:-10px;
+            margin-bottom: 20px;
+        }
+        #color{
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            margin-top: 8%;
+            margin-left: -10px;
+            margin-right:-10px;
+            border-radius: 100px;
+            background-color: #000;
+            padding: 12px 22px;
+        }
+        #powerful{
+            font-size: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            margin-top: 8%;
+            margin-left: -10px;
+            margin-right:-10px;
+        }
+        #mybox{
+            width: 462px;
+            height: 500px;
+            border: 1px solid rgb(42, 42, 62);
+            border-radius: 10px;
+            background-color: #0c1015;
+        }
+        #circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #13171e;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        #maindiv{
+            display: flex;
+            margin-left: 14%;
+            margin-right: 0;
+        }
+        #design{
+            color: #b3bcc9;
+         font-size: 20px;
+         font-family: Arial, Helvetica, sans-serif;
+            line-height: 2.5;
+            margin-left: 20px;
+        }
+        #high{
+            font-size:  36px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            margin-left: 10%;
+            line-height: 1.5;
+                }
+        #design2{
+            font-size: 16px;
+            color: #b3bcc9;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10%;
+            line-height: 1.5;
+        }
+        #myimg{
+            margin-left: 18%;
+            margin-top: 18%;
+        }
+        #maindiv2{
+            display: flex;
+            margin-left: 14%;
+            margin-right: 0;
+        }
+        #maindiv3{
+            display: flex;
+            margin-left: 14%;
+            margin-right: 0;
+        }
+        #maindiv4{
+            display: flex;
+            margin-left: 14%;
+            margin-right: 0;
+        }
+        #background{
+            background-color: #13171e;
+
+        }
+        #maindiv5{
+            display: flex;
+            margin-left: 14%;
+            margin-right: 0;
+        }
+        #maindiv6{
+            display: flex;
+            margin-left: 14%;
+            margin-right: 0;
+        }
+        #maindiv7{
+                display: flex;
+                margin-left: 14%;
+                margin-right: 0;
+        }
+        #mybox2{
+            width:462px;
+            height: 700px;
+            border: 1px solid rgb(42, 42, 62);
+            background-color:#0d1116 ;
+        }
+        #myimg2{
+            margin-top: 8%;
+            margin-left: 5%;
+        }
+        #learn{
+            text-decoration: none;
+            margin-left: 14%;
+            background-color: rgb(35, 32, 30);
+            color: orangered;
+            padding: 18px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #learn:hover{
+            background-color:#000;
+        }
+        #design3
+        {
+            font-size: 16px;
+            color: #b3bcc9;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10%;
+            line-height: 1.5;
+            margin-top: 10%;
+        }
+        #Online{
+            font-size:  36px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            margin-left: 10%;
+            line-height: 1.5;
+            margin-top: 10% ;        
+        }
+        #img2{
+            margin-top: 20%;
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <span id="logo">SHABDA.</span>
+        <a href=""id="linkref">Features</a>
+        <a href="" id="linkref">Use cases</a>
+        <a href=""id="linkref">Cost Calculator</a>
+        <a href=""id="linkref">Pricing</a>
+        <a href=""><span id="pas">Login In</span></a>
+    </div>
+   <center><p id="integrate">Integrate audio chat into your app<br>effortlessly with Shabda</p></center><br>
+   <center><a href="" id="new">Join Waitlist ></a> <a href="" id="new2">Compare > </a></center><br><br><br>
+   <center><iframe src="https://giphy.com/embed/26n3JiXJYSF3nOTL2" width="1000" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/computer-aesthetic-internet-popup-26n3JiXJYSF3nOTL2"></a></p></center>
+   <center><p id="shabda">Shabda delivers high-quality, low<br> latency audio calls at -</p></center>
+   <center><span id="color">incredibly low costs</span></center><br><br><br><br><br><br>
+   <center><p id="powerful">A powerful, feature-rich SDK to add audio chat<br>into your application without worrying about your<br>product backlog</p></center>
+   <div id="maindiv">
+    <div id="mybox">
+        <div id="circle"><a id="design">1</a></div>
+            <p id="high">High Quality<br> Audio</p>
+            <p id="design2">Experience crystal-clear audio <br>quality for seamless<br>communication between users.</p>
+   </div>
+   <div id="mybox"><img src="https://assets-global.website-files.com/64feadcd16afe6253400cd1b/6523dddcc455935e670760fb_high%20quality%20audio.gif"width=57% id="myimg">
+    </div>
+   </div>
+   <br>
+   <div id="maindiv2">
+    <div id="mybox">
+        <img src="https://assets-global.website-files.com/64feadcd16afe6253400cd1b/6523de13b84a366c4aa72e31_Low-Latency2.gif"width= 58% id="myimg">
+    </div>
+    <div id="mybox">
+        <div id="circle"><a id="design">2</a></div>
+        <p id="high">Low Latency</p>
+        <p id="design2">Enjoy low latency audio calls,<br>ensuring real-time communication<br>and collaboration.</p> 
+    </div>
+   </div>
+   <div id="background">
+    <br>
+   <div id="maindiv3">
+    <div id="mybox">
+        <div id="circle"><a id="design">3</a></div>
+            <p id="high">Easy integration</p>   
+            <p id="design2">Integrate easily into your mobile or<br>web application with just a few lines<br>of code.</p>
+   </div>
+   <div id="mybox"><img src="https://assets-global.website-files.com/64feadcd16afe6253400cd1b/6523dd391b687388fa8f279f_Easy-Integration2.gif"width=58% id="myimg">
+    </div>
+   </div>
+   <br>
+   <div id="maindiv4">
+     <div id="mybox">
+        <img src="https://assets-global.website-files.com/64feadcd16afe6253400cd1b/6523de29c12f787d32769ed1_cost-effective-500x500.gif"width=58% id="myimg">
+     </div>
+     <div id="mybox">
+        <div id="circle">
+            <p id="design">4</p></div>
+            <p id="high">Cost Effective</p>
+            <p id="design2">Implement audio chat functionality<br>at a fraction of the cost compared<br>to other solutions.</p>
+     </div>
+    </div>
+    <br>
+   <div id="maindiv5">
+     <div id="mybox">
+        <div id="circle">
+            <a id="design">5</a>
+        </div>
+        <p id="high">Developer<br>Friendly</p>
+        <p id="design2">Develop with peace of mind with<br>comprehensive documentation<br>and support.</p>
+     </div>
+     <div id="mybox">
+        <img src="https://assets-global.website-files.com/64feadcd16afe6253400cd1b/6523de38a69837062d35226a_Developer-friendly-500x.gif"width=58% id="myimg">
+     </div>
+   </div>
+   <br>
+   <div id="maindiv6">
+     <div id="mybox">
+        <img src="https://assets-global.website-files.com/64feadcd16afe6253400cd1b/6523de47062f5045458e81c0_scalable-500x500.gif"width=58% id="myimg">
+     </div>
+     <div id="mybox">
+        <div id="circle">
+            <a id="design">6</a>
+        </div>
+        <p id="high">Scalable</p>
+        <p id="design2">Support up to 16 participants on a<br>call, perfect for group<br>collaboration.</p>
+     </div>
+   </div><br><br><br><br>
+   <center><a href="" id="new">Join Waitlist ></a> </center><br><br>
+   <center><p id="powerful">Frictionless solution to fast track audio<br>chat functionality on applications<br>across industries</p></center>
+   <div id="maindiv7">
+        <div id="mybox2">
+            <img src="https://assets-global.website-files.com/64feadcd16afe6253400cd1b/6523c4150ebf3ae27122052e_remote-colab.gif"width=51% id="myimg2">
+            <p id="high">Remote<br>Collaboration</p>
+            <p id="design2">Integrate an intuitive high-quality audio<br>calling function on remote collaboration<br>tools for team members or event<br>attendees.</p>
+           <br><br> <a href="" id="learn">Learn More > </a>
+        </div>
+        <div id="mybox2">
+            <div id="mybox2">
+                <img src="https://assets-global.website-files.com/64feadcd16afe6253400cd1b/6523c415fab9054d1af7e793_Online-edu.gif"width=51% id="img2">
+                <br><p id="Online">Online Education</p>
+                <p id="design3">Add crystal clear, low-latency audio<br>capabilities to online education<br>platforms to deliver an unparalleled<br>experience.
+
+                </p>
+            </div>
+        </div>
+   </div>
+   </div>
+</body>
+</html>
